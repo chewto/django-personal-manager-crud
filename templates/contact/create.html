@@ -1,0 +1,28 @@
+{% extends '../layout/base.html' %}
+
+{% block "title" %}Create contact{% endblock "title" %}
+
+{% block "styles" %}
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/forms.css' %}">
+
+{% endblock "styles" %}
+
+
+{% block "content" %}
+
+    <h1 class="page-title">Create a new contact</h1>
+
+    <span class="aux-btns-form"><a href="{% url 'contact' %}" class="btn btn-detail">return</a></span>
+
+    <form action="{% url 'contact_create' %}" method="POST">
+        {% csrf_token %}
+        <table>
+            {{form.as_table}}
+        </table>
+        <div class="btn-wrapper">
+            <input type="submit" value="Submit" class="btn-send"/>
+        </div>
+    </form>
+{% endblock "content" %}
