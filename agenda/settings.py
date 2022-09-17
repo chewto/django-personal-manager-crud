@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'agenda.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'practica crud',
+        'NAME': 'localhost',
         'USER': 'postgres',
         'PASSWORD': '30265611',
         'HOST': '127.0.0.1',
