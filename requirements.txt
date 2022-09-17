@@ -18,6 +18,7 @@ django-seed==0.3.1
 entrypoints==0.4
 executing==0.9.1
 Faker==14.1.0
+gunicorn
 google-api-core==2.8.2
 google-api-python-client==2.55.0
 google-auth==2.10.0
@@ -83,3 +84,4 @@ tzdata==2022.1
 uritemplate==4.1.1
 urllib3==1.26.11
 wcwidth==0.2.5
+whitenoise
